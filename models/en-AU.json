@@ -1,21 +1,21 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "Melbourne AGMC info",
+            "invocationName": "star sign",
             "intents": [
                 {
                     "name": "AboutIntent",
                     "slots": [],
                     "samples": [
-                        "tell me about agmc",
-                        "tell me more about agmc",
+                        "tell me about star sign",
+                        "tell me more about star sign",
                         "tell me more about this skill",
                         "I would like to know more about this skill",
                         "about"
                     ]
                 },
                 {
-                    "name": "FacebookIntent",
+                    "name": "StarSignIntent",
                     "slots": [
                         {
                             "name": "birthdate",
@@ -29,14 +29,20 @@
                     ]
                 },
                 {
-                    "name": "EventIntent",
-                    "slots": [],
+                    "name": "TodayIntent",
+                    "slots": [
+                        {
+                            "name": "mystarsign",
+                            "type": "myStarType"
+                        }
+                    ],
                     "samples": [
-                        "check event",
-                        "upcoming event",
-                        "what are myevent",
-                        "myevent",
-                        "I would like to know more event"
+                        "check {mystarsign}",
+                        "how is {mystarsign} today",
+                        "how is {mystarsign}",
+                        "{mystarsign}",
+                        "I am {mystarsign}",
+                        "my horoscope is {mystarsign}"
                     ]
                 },
                 {
@@ -64,7 +70,82 @@
                     "samples": []
                 }
             ],
-            "types": []
+            "types": [
+                {
+                    "name": "myStarType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "libra",
+                                "synonyms": [
+                                    "librae"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pisces"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aquarius",
+                                "synonyms": [
+                                    "Aquarian"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aries"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Taurus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gemini"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "leo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Virgo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scorpio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sagittarius",
+                                "synonyms": [
+                                    "sagittarian"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Capricorn"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
