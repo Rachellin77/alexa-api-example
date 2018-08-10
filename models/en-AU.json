@@ -1,0 +1,70 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "Melbourne AGMC info",
+            "intents": [
+                {
+                    "name": "AboutIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me about agmc",
+                        "tell me more about agmc",
+                        "tell me more about this skill",
+                        "I would like to know more about this skill",
+                        "about"
+                    ]
+                },
+                {
+                    "name": "FacebookIntent",
+                    "slots": [
+                        {
+                            "name": "birthdate",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "my birthday is {birthdate}",
+                        "{birthdate}",
+                        "I was born in {birthdate}"
+                    ]
+                },
+                {
+                    "name": "EventIntent",
+                    "slots": [],
+                    "samples": [
+                        "check event",
+                        "upcoming event",
+                        "what are myevent",
+                        "myevent",
+                        "I would like to know more event"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "tell me more",
+                        "yes tell me more",
+                        "go ahead"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
